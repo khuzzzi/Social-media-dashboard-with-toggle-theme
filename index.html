@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="left">
+        <h3>Social Media Dashboard</h3>
+        <p>Total Followers : 23,004</p>
+      </div>
+      <div class="switch-btn">
+        <label class="switch">
+          <input type="checkbox" class="input" >
+          <span class="slider"></span>
+          <p style="font-size: 4vw; display: inline-block;">dark mode</p>
+        </label>
+      </div>
+    </div>
+
+    <div class="upper">
+      <div class="card-grp">
+        <div class="card">
+          <div class="card-upper">
+            <img src="images/icon-facebook.svg" alt="">
+            <p class="name">@nathanf</p>
+          </div>
+          <h2 class="count">1987</h2>
+          <p class="follower-count">FOLLOWERS</p>
+          <div class="current-count">
+            <img src="images/icon-up.svg" alt="" class="icon">
+            <p>12 Today</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-grp">
+        <div class="card">
+          <div class="card-upper">
+            <img src="images/icon-twitter.svg" alt="">
+            <p class="name">@nathanf</p>
+          </div>
+          <h2 class="count">1044</h2>
+          <p class="follower-count">FOLLOWERS</p>
+          <div class="current-count">
+            <img src="images/icon-up.svg" alt="" class="icon"> 
+            <p>99 Today</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-grp">
+        <div class="card">
+          <div class="card-upper">
+            <img src="images/icon-instagram.svg" alt="">
+            <p class="name">@realnathanf</p>
+          </div>
+          <h2 class="count">11k</h2>
+          <p class="follower-count">FOLLOWERS</p>
+          <div class="current-count">
+            <img src="images/icon-up.svg" alt="" class="icon">
+            <p>1099 Today</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-grp">
+        <div class="card">
+          <div class="card-upper">
+            <img src="images/icon-youtube.svg" alt="" >
+            <p class="name">@Nathan F.</p>
+          </div>
+          <h2 class="count">8239</h2>
+          <p class="follower-count">SUBSCRIBERS</p>
+          <div class="current-count">
+            <img src="images/icon-up.svg" alt="" class="icon">
+            <p>144 Today</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-content">
+      <h3>Overview - Today</h3>
+    </div>
+
+    <div class="lower">
+      <div class="card-grp-lower">
+        <div class="card-lower">
+          <div class="text">Page Views</div>
+          <h3 class="lowertext">87</h3>
+          <img src="images/icon-up.svg" alt="">
+          <img src="images/icon-facebook.svg" alt="">
+        </div>
+        <div class="card-lower">
+          <div class="text">Likes</div>
+          <h3 class="lowertext">52</h3>
+          <img src="images/icon-down.svg" alt="">
+          <img src="images/icon-facebook.svg" alt="">
+        </div>
+      </div>
+
+      <div class="card-grp-lower">
+        <div class="card-lower">
+          <div class="text">Likes</div>
+          <h3 class="lowertext">5462</h3>
+          <img src="images/icon-up.svg" alt="">
+          <img src="images/icon-instagram.svg" alt="">
+        </div>
+        <div class="card-lower">
+          <div class="text">Profile Views</div>
+          <h3 class="lowertext">52k</h3>
+          <img src="images/icon-up.svg" alt="">
+          <img src="images/icon-instagram.svg" alt="">
+        </div>
+      </div>
+
+      <div class="card-grp-lower">
+        <div class="card-lower">
+          <div class="text">Retweets</div>
+          <h3 class="lowertext">117</h3>
+          <img src="images/icon-down.svg" alt="">
+          <img src="images/icon-twitter.svg" alt="">
+        </div>
+        <div class="card-lower">
+          <div class="text">Likes</div>
+          <h3 class="lowertext">507</h3>
+          <img src="images/icon-down.svg" alt="">
+          <img src="images/icon-twitter.svg" alt="">
+        </div>
+      </div>
+
+      <div class="card-grp-lower">
+        <div class="card-lower">
+          <div class="text">Likes</div>
+          <h3 class="lowertext">107</img src="images/icon-down.svg" alt="">
+          <img src="images/icon-youtube.svg" alt="">
+        </div>
+        <div class="card-lower">
+          <div class="text">Total Views</div>
+          <h3 class="lowertext">1407</img src="images/icon-down.svg" alt="">
+          <img src="images/icon-youtube.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+     
+    let btn = document.querySelector("input")
+    btn.addEventListener("click",function(e){
+      if(e.target.checked){
+        window.location.href = "darkindex.html"
+      }
+    })
+  
+  </script>
+</body>
+</html>
